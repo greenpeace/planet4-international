@@ -1,0 +1,254 @@
+version: 2
+
+defaults: &defaults
+  docker:
+    - image: gcr.io/planet-4-151612/p4-builder:latest
+  working_directory:  /home/circleci
+
+job_environments:
+  common_environment: &common_environment
+    CONTAINER_PREFIX: planet4-international
+    APP_HOSTPATH: international
+  develop_environment: &develop_environment
+    APP_ENVIRONMENT: development
+    APP_HOSTNAME: k8s.p4.greenpeace.org
+    CLOUDSQL_INSTANCE: p4-develop-k8s
+    GOOGLE_PROJECT_ID: planet-4-151612
+    HELM_NAMESPACE: develop
+    NEWRELIC_APPNAME: P4 International Development
+    WP_DB_NAME: p4-international_wordpress_develop
+    WP_STATELESS_BUCKET: planet4-international-stateless-develop
+  release_environment: &release_environment
+    APP_ENVIRONMENT: staging
+    APP_HOSTNAME: release.k8s.p4.greenpeace.org
+    CLOUDSQL_INSTANCE: planet4-prod
+    GCLOUD_CLUSTER: planet4-production
+    GOOGLE_PROJECT_ID: planet4-production
+    HELM_NAMESPACE: international
+    HELM_RELEASE: planet4-international-release
+    NEWRELIC_APPNAME: P4 International Release
+    WP_DB_NAME: p4-international_wordpress_release
+    WP_STATELESS_BUCKET: planet4-international-stateless-release
+  production_environment: &production_environment
+    APP_HOSTNAME: master.k8s.p4.greenpeace.org
+    CLOUDSQL_INSTANCE: planet4-prod
+    GCLOUD_CLUSTER: planet4-production
+    GOOGLE_PROJECT_ID: planet4-production
+    HELM_NAMESPACE: international
+    HELM_RELEASE: planet4-international-master
+    MIN_REPLICA_COUNT: 2
+    NEWRELIC_APPNAME: P4 International Production
+    WP_DB_NAME: p4-international_wordpress_master
+    WP_STATELESS_BUCKET: planet4-international-stateless
+
+
+job_definitions:
+  build_steps: &build_steps
+    steps:
+      - setup_remote_docker
+      - run: activate-gcloud-account.sh
+      - run: mkdir -p /tmp/workspace/var
+      - run: mkdir -p /tmp/workspace/src
+      - run: echo "${CIRCLE_BUILD_NUM}" > /tmp/workspace/var/circle-build-num
+      - run: make
+      - run:
+          name: Notify failure
+          when: on_fail
+          command: TYPE="Build" notify-job-failure.sh
+      - persist_to_workspace:
+          root: /tmp/workspace
+          paths:
+            - var
+            - src
+
+  prepare_release: &prepare_release
+    working_directory: /tmp/workspace/src
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/workspace
+      - run: release-prepare-nro.sh
+      - run:
+          name: Notify failure
+          when: on_fail
+          command: TYPE="Prepare" notify-job-failure.sh
+      - persist_to_workspace:
+          root: /tmp/workspace
+          paths:
+            - var
+            - src
+
+  notify_promote: &notify_promote
+    working_directory: ~/project
+    steps:
+      - checkout
+      - run:
+          name: notify
+          command: |
+            TYPE="@rawalker Promote release/$(increment-version.sh "$(git-current-tag.sh)")" \
+            EXTRA_TEXT="Verify: https://$APP_HOSTNAME/$APP_HOSTPATH"
+            notify-job-hold.sh
+
+  finish_release: &finish_release
+    working_directory: /tmp/workspace/src
+    steps:
+      - attach_workspace:
+          at: /tmp/workspace
+      - checkout
+      - run: increment-version.sh "$(git-current-tag.sh)" | tee /tmp/workspace/var/new_release
+      - run: release-finish.sh
+      - run: git push origin --delete release/$(cat /tmp/workspace/var/new_release)
+      - run:
+          name: Notify failure
+          when: on_fail
+          command: TYPE="Promote" notify-job-failure.sh
+
+  deploy_steps: &deploy_steps
+    steps:
+      - attach_workspace:
+          at: /tmp/workspace
+      - run: activate-gcloud-account.sh
+      - run: BUILD_TAG=build-$(cat /tmp/workspace/var/circle-build-num) make -j2 deploy
+
+jobs:
+  build-branch:
+    <<: *defaults
+    environment:
+      <<: *common_environment
+      <<: *develop_environment
+    <<: *build_steps
+
+  prepare-release:
+    <<: *defaults
+    <<: *prepare_release
+
+  notify-promote:
+    <<: *defaults
+    <<: *notify_promote
+
+  build-release:
+    <<: *defaults
+    environment:
+      <<: *common_environment
+      <<: *release_environment
+    <<: *build_steps
+
+  finish-release:
+    <<: *defaults
+    <<: *finish_release
+
+  build-tag:
+    <<: *defaults
+    environment:
+      <<: *common_environment
+      <<: *production_environment
+    <<: *build_steps
+
+  deploy-develop:
+    <<: *defaults
+    environment:
+      <<: *common_environment
+      <<: *develop_environment
+    <<: *deploy_steps
+
+  deploy-release:
+    <<: *defaults
+    environment:
+      <<: *common_environment
+      <<: *release_environment
+    <<: *deploy_steps
+
+  deploy-tag:
+    <<: *defaults
+    environment:
+      <<: *common_environment
+      <<: *production_environment
+    <<: *deploy_steps
+
+workflows:
+  version: 2
+  develop:
+    jobs:
+    - build-branch:
+        context: org-global
+        filters:
+          branches:
+            only: develop
+    - deploy-develop:
+        context: org-global
+        requires:
+          - build-branch
+        filters:
+          branches:
+            only: develop
+    - prepare-release:
+        context: org-global
+        requires:
+          - deploy-develop
+        filters:
+          branches:
+            only: develop
+
+  release:
+    jobs:
+    - build-release:
+        context: org-global
+        filters:
+          branches:
+            only: /^release.*/
+    - deploy-release:
+        context: org-global
+        requires:
+          - build-release
+        filters:
+          branches:
+            only: /^release.*/
+    - notify-promote:
+        context: org-global
+        requires:
+          - deploy-release
+        filters:
+          branches:
+            only: /^release.*/
+    - hold-promote:
+        type: approval
+        requires:
+          - deploy-release
+        filters:
+          branches:
+            only: /^release.*/
+    - finish-release:
+        context: org-global
+        requires:
+          - hold-promote
+          - notify-promote
+        filters:
+          branches:
+            only: /^release.*/
+  tag:
+    jobs:
+      - build-tag:
+          context: org-global
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: /^v\p{Digit}+\.\p{Digit}+\.\p{Digit}+.*/
+      - hold-tag:
+          type: approval
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: /^v\p{Digit}+\.\p{Digit}+\.\p{Digit}+.*/
+          requires:
+            - build-tag
+      - deploy-tag:
+          context: org-global
+          requires:
+            - hold-tag
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: /^v\p{Digit}+\.\p{Digit}+\.\p{Digit}+.*/
