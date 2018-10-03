@@ -2,7 +2,7 @@ version: 2
 
 defaults: &defaults
   docker:
-    - image: gcr.io/planet-4-151612/p4-builder:build-123
+    - image: gcr.io/planet-4-151612/p4-builder:latest
   working_directory:  /home/circleci
 
 job_environments:
