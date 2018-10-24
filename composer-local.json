@@ -3,7 +3,9 @@
 	"description": "Greenpeace P4 International",
 	"license": "MIT",
 	"require": {
-		"greenpeace/planet4-child-theme" : "0.*"
+		"greenpeace/planet4-child-theme" : "0.*",
+		"greenpeace/planet4-master-theme" : "dev-release/v1.21.0",
+		"greenpeace/planet4-plugin-blocks" : "dev-release/v1.21.0"
 	},
 	"scripts": {
 		"site:custom" : []
