@@ -6,7 +6,7 @@
 		"greenpeace/planet4-child-theme" : "0.*",
 		"greenpeace/planet4-master-theme" : "dev-release/v1.39.0",
 		"greenpeace/planet4-plugin-blocks" : "dev-release/v1.39.0",
-		"greenpeace/planet4-plugin-engagingnetworks": "dev-release/v1.7"
+		"greenpeace/planet4-plugin-engagingnetworks": "dev-release/v1.7.1"
 	},
 	"scripts": {
 		"site:custom" : []
