@@ -38,6 +38,7 @@ job_environments:
     HELM_NAMESPACE: international
     HELM_RELEASE: planet4-international-master
     PHP_MIN_REPLICA_COUNT: 4
+    PHP_PROCESS_MANAGER_MAX_CHILDREN: 50
     NEWRELIC_APPNAME: P4 International Production
     WP_DB_NAME: p4-international_wordpress_master
     WP_STATELESS_BUCKET: planet4-international-stateless
