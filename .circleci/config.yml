@@ -37,7 +37,7 @@ job_environments:
     GOOGLE_PROJECT_ID: planet4-production
     HELM_NAMESPACE: international
     HELM_RELEASE: planet4-international-master
-    MIN_REPLICA_COUNT: 2
+    PHP_MIN_REPLICA_COUNT: 4
     NEWRELIC_APPNAME: P4 International Production
     WP_DB_NAME: p4-international_wordpress_master
     WP_STATELESS_BUCKET: planet4-international-stateless
