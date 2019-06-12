@@ -5,7 +5,7 @@
 	"require": {
 		"greenpeace/planet4-child-theme" : "0.*",
 		"greenpeace/planet4-master-theme": "v1.46",
-		"wpackagist-plugin/timber-library": "1.9.5"
+		"wpackagist-plugin/timber-library": "1.9.4"
 	},
 	"scripts": {
 		"site:custom" : []
