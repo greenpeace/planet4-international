@@ -4,7 +4,7 @@
 	"license": "MIT",
 	"require": {
 		"greenpeace/planet4-child-theme" : "0.*",
-		"wpackagist-plugin/elasticpress": "3.0.2"
+		"greenpeace/planet4-master-theme": "v1.46"
 	},
 	"scripts": {
 		"site:custom" : []
