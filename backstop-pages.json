@@ -4,25 +4,19 @@
       "label": "Planet4 International act page",
       "url": "https://APP_HOSTNAME/APP_HOSTPATH/act/",
       "delay": 3000,
-      "misMatchThreshold": 1
+      "misMatchThreshold": 1.5
     },
     {
       "label": "Planet4 International explore page",
       "url": "https://APP_HOSTNAME/APP_HOSTPATH/explore/",
       "delay": 3000,
-      "misMatchThreshold": 1
+      "misMatchThreshold": 1.5
     },
     {
       "label": "Planet4 International privacy and cookies page",
       "url": "https://APP_HOSTNAME/APP_HOSTPATH/privacy/",
       "delay": 3000,
-      "misMatchThreshold": 1
-    },
-    {
-      "label": "Planet4 International search page",
-      "url": "https://APP_HOSTNAME/APP_HOSTPATH/?s=forest",
-      "delay": 3000,
-      "misMatchThreshold": 1
+      "misMatchThreshold": 1.5
     }
   ]
 }
