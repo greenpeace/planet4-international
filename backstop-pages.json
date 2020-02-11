@@ -17,6 +17,24 @@
       "url": "https://APP_HOSTNAME/APP_HOSTPATH/privacy/",
       "delay": 3000,
       "misMatchThreshold": 1.5
+    },
+    {
+      "label": "Planet4 International Campaign Climate Emergency",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/climate-emergency/",
+      "delay": 3000,
+      "misMatchThreshold": 1.5
+    },
+    {
+      "label": "Planet4 International Campaign Ocean Declaration",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/ocean-declaration/",
+      "delay": 3000,
+      "misMatchThreshold": 1.5
+    },
+    {
+      "label": "Planet4 International Campaign Plastics Toolkit",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/toolkit-plastic-free-future/",
+      "delay": 3000,
+      "misMatchThreshold": 1.5
     }
   ]
 }
