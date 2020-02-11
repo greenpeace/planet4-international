@@ -35,6 +35,54 @@
       "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/toolkit-plastic-free-future/",
       "delay": 3000,
       "misMatchThreshold": 1.5
+    },
+    {
+      "label": "Planet4 International Campaign Plastics Toolkit",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/organise-a-zero-waste-event/",
+      "delay": 3000,
+      "misMatchThreshold": 1.5
+    },
+    {
+      "label": "Planet4 International Campaign Plastics Toolkit",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/challenge-local-restaurant/",
+      "delay": 3000,
+      "misMatchThreshold": 1.5
+    },
+    {
+      "label": "Planet4 International Campaign Plastics Toolkit",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/challenge-local-supermarkets/",
+      "delay": 3000,
+      "misMatchThreshold": 1.5
+    },
+    {
+      "label": "Planet4 International Campaign Plastics Toolkit",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/single-use-ban-in-your-community/",
+      "delay": 3000,
+      "misMatchThreshold": 1.5
+    },
+    {
+      "label": "Planet4 International Campaign Plastics Toolkit",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/tools-for-teachers/",
+      "delay": 3000,
+      "misMatchThreshold": 1.5
+    },
+    {
+      "label": "Planet4 International Campaign Plastics Toolkit",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/become-a-citizen-scientist/",
+      "delay": 3000,
+      "misMatchThreshold": 1.5
+    },
+    {
+      "label": "Planet4 International Campaign Plastics Toolkit",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/learn-about-plastic-pollution/",
+      "delay": 3000,
+      "misMatchThreshold": 1.5
+    },
+    {
+      "label": "Planet4 International Campaign COP25",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/campaign/cop25/",
+      "delay": 3000,
+      "misMatchThreshold": 1.5
     }
   ]
 }
