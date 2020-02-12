@@ -17,6 +17,72 @@
       "url": "https://APP_HOSTNAME/APP_HOSTPATH/privacy/",
       "delay": 3000,
       "misMatchThreshold": 1.5
+    },
+    {
+      "label": "Planet4 International Campaign Climate Emergency",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/climate-emergency/",
+      "delay": 3000,
+      "misMatchThreshold": 1.5
+    },
+    {
+      "label": "Planet4 International Campaign Ocean Declaration",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/ocean-declaration/",
+      "delay": 3000,
+      "misMatchThreshold": 1.5
+    },
+    {
+      "label": "Planet4 International Campaign Plastics toolkit-plastic-free-future",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/toolkit-plastic-free-future/",
+      "delay": 3000,
+      "misMatchThreshold": 1.5
+    },
+    {
+      "label": "Planet4 International Campaign Plastics organise-a-zero-waste-event",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/organise-a-zero-waste-event/",
+      "delay": 3000,
+      "misMatchThreshold": 1.5
+    },
+    {
+      "label": "Planet4 International Campaign Plastics challenge-local-restaurant",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/challenge-local-restaurant/",
+      "delay": 3000,
+      "misMatchThreshold": 1.5
+    },
+    {
+      "label": "Planet4 International Campaign Plastics challenge-local-supermarkets",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/challenge-local-supermarkets/",
+      "delay": 3000,
+      "misMatchThreshold": 1.5
+    },
+    {
+      "label": "Planet4 International Campaign Plastics single-use-ban-in-your-community",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/single-use-ban-in-your-community/",
+      "delay": 3000,
+      "misMatchThreshold": 1.5
+    },
+    {
+      "label": "Planet4 International Campaign Plastics tools-for-teachers",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/tools-for-teachers/",
+      "delay": 3000,
+      "misMatchThreshold": 1.5
+    },
+    {
+      "label": "Planet4 International Campaign Plastics become-a-citizen-scientist",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/become-a-citizen-scientist/",
+      "delay": 3000,
+      "misMatchThreshold": 1.5
+    },
+    {
+      "label": "Planet4 International Campaign learn-about-plastic-pollution",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/learn-about-plastic-pollution/",
+      "delay": 3000,
+      "misMatchThreshold": 1.5
+    },
+    {
+      "label": "Planet4 International Campaign COP25",
+      "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/campaign/cop25/",
+      "delay": 3000,
+      "misMatchThreshold": 1.5
     }
   ]
 }
