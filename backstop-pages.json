@@ -55,12 +55,6 @@
       "misMatchThreshold": 1.5
     },
     {
-      "label": "Planet4 International Campaign Plastics single-use-ban-in-your-community",
-      "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/single-use-ban-in-your-community/",
-      "delay": 3000,
-      "misMatchThreshold": 1.5
-    },
-    {
       "label": "Planet4 International Campaign Plastics tools-for-teachers",
       "url": "https://APP_HOSTNAME/APP_HOSTPATH/campaign/tools-for-teachers/",
       "delay": 3000,
