@@ -4,8 +4,21 @@
 	"license": "MIT",
 	"require": {
 		"greenpeace/planet4-child-theme-international" : "v0.*",
-		"greenpeace/planet4-plugin-gutenberg-blocks" : "dev-plastics-hotfix"
+		"greenpeace/planet4-plugin-gutenberg-blocks" : "v0.77.2"
 	},
 	"scripts": {
-	}
+	},
+	"repositories": [
+		{
+			"type": "package",
+			"package": {
+				"name": "greenpeace/planet4-plugin-gutenberg-blocks",
+				"version": "v0.77.2",
+				"dist": {
+					"type": "zip",
+					"url": "https://github.com/greenpeace/planet4-plugin-gutenberg-blocks/releases/download/v0.77.2/planet4-plugin-gutenberg-blocks.zip"
+				}
+			}
+		}
+	]
 }
