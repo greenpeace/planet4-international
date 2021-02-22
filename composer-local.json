@@ -1,10 +1,10 @@
 {
-	"name": "greenpeace/planet4-international",
-	"description": "Greenpeace P4 International",
-	"license": "MIT",
-	"require": {
-		"greenpeace/planet4-child-theme-international" : "dev-master"
-	},
-	"scripts": {
-	}
+    "name": "greenpeace/planet4-international",
+    "description": "Greenpeace P4 International",
+    "license": "MIT",
+    "require": {
+        "greenpeace/planet4-child-theme-international" : "dev-master"
+    },
+    "scripts": {
+    }
 }
