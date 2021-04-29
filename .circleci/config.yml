@@ -549,38 +549,6 @@ workflows:
           requires:
             - hold-production
 
-  sync-from-production:
-    triggers:
-      - schedule:
-          cron: "10 01 1 * *"
-          filters:
-            branches:
-              only:
-                - main
-    jobs:
-      - create-sync-sql:
-          context: org-global
-      - sync-to-staging:
-          context: org-global
-          requires:
-            - create-sync-sql
-      - sync-to-develop:
-          context: org-global
-          requires:
-            - create-sync-sql
-
-  notify-sync:
-    triggers:
-      - schedule:
-          cron: "10 02 28 * *"
-          filters:
-            branches:
-              only:
-                - main
-    jobs:
-      - notify-sync:
-          context: org-global
-
   backup:
     triggers:
       - schedule:
