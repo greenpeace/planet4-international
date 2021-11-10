@@ -1,0 +1,6 @@
+{
+    "require": {
+        "greenpeace/planet4-master-theme" : "dev-new-post-design",
+        "greenpeace/planet4-child-theme-international" : "dev-take-action-boxout-new-version"
+    }
+}
