@@ -4,8 +4,7 @@
   "license": "MIT",
   "require": {
     "wpackagist-plugin/notification": "7.2.4",
-    "greenpeace/planet4-child-theme-international" : "dev-add-country-selector-banner",
-    "greenpeace/planet4-master-theme" : "dev-country-selector-banner"
+    "greenpeace/planet4-child-theme-international" : "dev-main"
   },
   "scripts": {
   }
