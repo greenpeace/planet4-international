@@ -1,6 +1,6 @@
 {
   "require": {
-    "greenpeace/planet4-master-theme" : "dev-add-some-templates",
+    "greenpeace/planet4-master-theme" : "dev-query-loop-inherit-in-php-files",
     "greenpeace/planet4-plugin-gutenberg-blocks" : "dev-use-block-templates"
   },
   "extra": {
