@@ -5,7 +5,7 @@
   "require": {
     "wpackagist-plugin/notification": "7.2.4",
     "greenpeace/planet4-child-theme-international": "dev-main",
-    "greenpeace/planet4-master-theme": "feature/navigation_bar_drop_down_menus",
+    "greenpeace/planet4-master-theme": "dev-feature/navigation_bar_drop_down_menus",
     "plugins/gravityforms": "*",
     "plugins/gravityformsquiz": "*",
     "plugins/gravityformshubspot": "*"
