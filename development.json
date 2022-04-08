@@ -1,6 +1,5 @@
 {
   "require": {
-    "greenpeace/planet4-master-theme": "dev-feature/navigation_bar_drop_down_menus",
-    "greenpeace/planet4-plugin-gutenberg-blocks": "dev-fix/post-enform-from-backend"
+    "greenpeace/planet4-master-theme": "dev-feature/navigation_bar_drop_down_menus"
   }
 }
