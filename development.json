@@ -1,0 +1,6 @@
+{
+  "require": {
+    "plugins/gravityformsstripe": "*",
+    "plugins/gravityformspaypal": "*"
+  }
+}
