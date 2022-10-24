@@ -3,7 +3,7 @@
   "description": "Greenpeace P4 International",
   "license": "MIT",
   "require": {
-    "wpackagist-plugin/notification": "7.2.4",
+    "wpackagist-plugin/notification": "8.0.*",
     "greenpeace/planet4-child-theme-international": "dev-main",
     "plugins/gravityforms": "*",
     "plugins/gravityformsquiz": "*",
