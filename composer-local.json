@@ -4,7 +4,6 @@
   "license": "MIT",
   "require": {
     "wpackagist-plugin/notification": "8.0.*",
-    "greenpeace/planet4-child-theme": "dev-PLANET-6950_fix_navbar_links_color",
     "plugins/gravityforms": "*",
     "plugins/gravityformsquiz": "*",
     "plugins/gravityformshubspot": "*"
