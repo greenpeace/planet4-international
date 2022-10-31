@@ -1,6 +1,5 @@
 {
   "require": {
-    "greenpeace/planet4-master-theme": "dev-PLANET-6950_fix_navbar_links_color",
     "plugins/gravityformsstripe": "*",
     "plugins/gravityformspaypal": "*"
   }
