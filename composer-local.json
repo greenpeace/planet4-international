@@ -4,10 +4,8 @@
   "license": "MIT",
   "require": {
     "wpackagist-plugin/notification": "8.0.*",
-    "plugins/gravityforms": "*",
-    "plugins/gravityformsquiz": "*",
-    "plugins/gravityformshubspot": "*"
-  },
-  "scripts": {
+    "plugins/gravityformshubspot": "*",
+    "plugins/gravityformsstripe": "*",
+    "plugins/gravityformspaypal": "*"
   }
 }
