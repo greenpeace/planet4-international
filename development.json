@@ -1,6 +1,6 @@
 {
   "require": {
     "plugins/gravityformsgoogleanalytics": "*",
-    "greenpeace/planet4-master-theme": "dev-feature/stripe-datalayer-event-7105"
+    "greenpeace/planet4-master-theme": "dev-planet-7147-integrate-native-export"
   }
 }
