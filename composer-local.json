@@ -3,7 +3,6 @@
   "description": "Greenpeace P4 International",
   "license": "MIT",
   "require": {
-    "plugins/gravityformshubspot": "*",
     "plugins/gravityformsstripe": "*",
     "plugins/gravityformspaypal": "*"
   }
