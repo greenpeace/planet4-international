@@ -3,7 +3,7 @@
   "description": "Greenpeace P4 International",
   "license": "MIT",
   "require": {
-    "greenpeace/planet4-plugin-gutenberg-blocks" : "dev-PLANET-7217_carousel_header_fix",
+    "greenpeace/planet4-child-theme-international" : "dev-main",
     "plugins/gravityformsstripe": "*",
     "plugins/gravityformspaypal": "*"
   }
