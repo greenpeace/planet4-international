@@ -4,6 +4,7 @@
   "license": "MIT",
   "require": {
     "greenpeace/planet4-child-theme-international": "dev-main",
+    "greenpeace/planet4-master-theme": "fix-query-limit-post-revisions",
     "plugins/gravityformsstripe": "*",
     "plugins/gravityformspaypal": "*"
   }
