@@ -4,6 +4,7 @@
   "license": "MIT",
   "require": {
     "greenpeace/planet4-child-theme-international": "dev-main",
+    "greenpeace/planet4-plugin-gutenberg-blocks": "dev-PLANET-7313_fix-header-text-cut-off",
     "plugins/gravityformsstripe": "*",
     "plugins/gravityformspaypal": "*"
   }
