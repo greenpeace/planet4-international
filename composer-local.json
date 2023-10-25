@@ -4,8 +4,6 @@
   "license": "MIT",
   "require": {
     "greenpeace/planet4-child-theme-international": "dev-main",
-    "greenpeace/planet4-master-theme": "dev-PLANET-7193_cleanup-new-identity-code",
-    "greenpeace/planet4-plugin-gutenberg-blocks": "dev-PLANET-7193_cleanup-new-identity-code",
     "plugins/gravityformsstripe": "*",
     "plugins/gravityformspaypal": "*"
   }
