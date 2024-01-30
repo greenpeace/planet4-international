@@ -26,6 +26,7 @@ job_environments:
   common_environment: &common_environment
     CONTAINER_PREFIX: planet4-international
     APP_HOSTPATH: international
+    PARENT_VERSION: dockerize0.6
   develop_environment: &develop_environment
     APP_ENVIRONMENT: development
     APP_HOSTNAME: www-dev.greenpeace.org
@@ -36,7 +37,6 @@ job_environments:
     HELM_RELEASE: planet4-international
     WP_DB_NAME: p4-international_wordpress_develop
     WP_STATELESS_BUCKET: planet4-international-stateless-develop
-    PARENT_VERSION: dockerize0.6
   release_build_env: &release_build_env
     GOOGLE_PROJECT_ID: planet4-production
   release_environment: &release_environment
@@ -49,7 +49,6 @@ job_environments:
     HELM_RELEASE: planet4-international-release
     WP_DB_NAME: p4-international_wordpress_release
     WP_STATELESS_BUCKET: planet4-international-stateless-release
-    PARENT_VERSION: dockerize0.6
   production_environment: &production_environment
     APP_HOSTNAME: www.greenpeace.org
     CLOUDSQL_INSTANCE: planet4-prod
@@ -61,7 +60,6 @@ job_environments:
     PHP_PROCESS_MANAGER_MAX_CHILDREN: 50
     WP_DB_NAME: p4-international_wordpress_master
     WP_STATELESS_BUCKET: planet4-international-stateless
-    PARENT_VERSION: dockerize0.6
 
 
 commands:
