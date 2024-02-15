@@ -26,6 +26,7 @@ job_environments:
   common_environment: &common_environment
     CONTAINER_PREFIX: planet4-international
     APP_HOSTPATH: international
+    PARENT_VERSION: large_client_header_buffers
   develop_environment: &develop_environment
     APP_ENVIRONMENT: development
     APP_HOSTNAME: www-dev.greenpeace.org
@@ -36,7 +37,6 @@ job_environments:
     HELM_RELEASE: planet4-international
     WP_DB_NAME: p4-international_wordpress_develop
     WP_STATELESS_BUCKET: planet4-international-stateless-develop
-    PARENT_VERSION: large_client_header_buffers
   release_build_env: &release_build_env
     GOOGLE_PROJECT_ID: planet4-production
   release_environment: &release_environment
