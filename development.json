@@ -1,0 +1,5 @@
+{
+  "require": {
+    "wpackagist-plugin/wp-stateless": "4.0.4"
+  }
+}
