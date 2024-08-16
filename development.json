@@ -1,6 +1,0 @@
-{
-  "require": {
-    "wpackagist-plugin/wp-stateless": "4.0.4",
-    "wpackagist-plugin/wp-stateless-gravity-forms-addon": "0.0.1"
-  }
-}
