@@ -6,5 +6,8 @@
     "greenpeace/planet4-child-theme-international": "dev-main",
     "plugins/gravityformsstripe": "*",
     "plugins/gravityformspaypal": "*"
+  },
+  "extra": {
+    "wp-version": "6.5.5"
   }
 }
