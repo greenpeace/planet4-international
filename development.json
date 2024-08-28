@@ -1,5 +1,5 @@
 {
   "require": {
-    "greenpeace/planet4-master-theme" : "dev-PLANET-7585_fix-blocks-not-being-supported-in-existing-pages"
+    "greenpeace/planet4-plugin-gutenberg-blocks": "dev-PLANET-7585_fix-blocks-not-being-supported-in-existing-pages"
   }
 }
