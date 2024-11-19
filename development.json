@@ -1,6 +1,0 @@
-{
-  "require": {
-    "greenpeace/planet4-master-theme": "dev-add-stripe-test",
-    "greenpeace/planet4-child-theme-international": "dev-main"
-  }
-}
