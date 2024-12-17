@@ -4,6 +4,7 @@
   "license": "MIT",
   "require": {
     "greenpeace/planet4-child-theme-international": "dev-main",
-    "plugins/gravityformsstripe": "*"
+    "plugins/gravityformsstripe": "*",
+    "greenpeace/planet4-master-theme": "dev-PLANET-7675_add-vwo-in-csp-allow-list"
   }
 }
