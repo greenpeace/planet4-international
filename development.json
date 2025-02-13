@@ -1,6 +1,6 @@
 {
     "require": {
-      "greenpeace/planet4-master-theme": "dev-add/vwo-anti-flicker",
+      "greenpeace/planet4-master-theme": "dev-PLANET-7612_track-user_logins",
       "plugins/gravityformspipe": "*"
     }
   }
