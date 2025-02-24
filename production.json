@@ -1,6 +1,5 @@
 {
   "require": {
-    "greenpeace/planet4-child-theme-international" : "v0.*",
-    "greenpeace/planet4-master-theme": "dev-social-buttons-hold"
+    "greenpeace/planet4-child-theme-international" : "v0.*"
   }
 }
