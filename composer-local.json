@@ -5,7 +5,6 @@
   "require": {
     "greenpeace/planet4-child-theme-international": "dev-main",
     "plugins/gravityformsstripe": "*",
-    "plugins/gravityformspipe": "*",
-    "greenpeace/planet4-master-theme": "dev-fix/vwo-script-call"
+    "plugins/gravityformspipe": "*"
   }
 }
