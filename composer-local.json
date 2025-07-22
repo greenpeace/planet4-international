@@ -7,7 +7,6 @@
     "plugins/gravityformsstripe": "*",
     "plugins/gravityformspipe": "*",
     "plugins/gravityformssurvey": "*",
-    "greenpeace/planet4-gpch-plugin-optimize": "0.4.*",
-    "greenpeace/planet4-master-theme": "dev-resistance-hub-template"
+    "greenpeace/planet4-gpch-plugin-optimize": "0.4.*"
   }
 }
