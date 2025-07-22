@@ -1,6 +1,5 @@
 {
   "require": {
-    "greenpeace/planet4-child-theme-international" : "dev-main",
-    "greenpeace/planet4-master-theme": "dev-resistance-hub-template"
+    "greenpeace/planet4-child-theme-international" : "dev-main"
   }
 }
