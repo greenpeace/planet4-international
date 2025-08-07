@@ -1,6 +1,6 @@
 {
   "require": {
     "greenpeace/planet4-child-theme-international" : "dev-main",
-    "greenpeace/planet4-master-theme": "dev-PLANET-7862_style-links-included-into-listing-page-description"
+    "greenpeace/planet4-master-theme": "dev-actions-user-personalization"
   }
 }
