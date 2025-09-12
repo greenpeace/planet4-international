@@ -8,6 +8,6 @@
     "plugins/gravityformspipe": "*",
     "plugins/gravityformssurvey": "*",
     "greenpeace/planet4-gpch-plugin-optimize": "0.4.*",
-    "greenpeace/planet4-master-theme": "dev-PLANET-7712_implement-controls-to-carousel-header"
+    "greenpeace/planet4-master-theme": "dev-ch-rebased"
   }
 }
