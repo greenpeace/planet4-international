@@ -1,6 +1,6 @@
 {
   "require": {
     "greenpeace/planet4-child-theme-international" : "dev-main",
-    "greenpeace/planet4-master-theme": "dev-PLANET-7594-sitemap"
+    "greenpeace/planet4-master-theme": "dev-create-separate-class-for-head-functions"
   }
 }
