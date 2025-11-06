@@ -1,6 +1,6 @@
 {
   "require": {
     "greenpeace/planet4-child-theme-international" : "dev-main",
-    "greenpeace/planet4-master-theme": "dev-PLANET-7594-sitemap"
+    "greenpeace/planet4-master-theme": "dev-PLANET-7953_set-global-project-as-fallback-of-local-project"
   }
 }
