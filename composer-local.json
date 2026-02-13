@@ -6,6 +6,7 @@
     "greenpeace/planet4-child-theme-international": "dev-main",
     "plugins/gravityformsstripe": "*",
     "plugins/gravityformssurvey": "*",
-    "greenpeace/planet4-gpch-plugin-optimize": "0.4.*"
+    "greenpeace/planet4-gpch-plugin-optimize": "0.4.*",
+    "wpackagist-plugin/wp-all-export": "1.3.7"
   }
 }
