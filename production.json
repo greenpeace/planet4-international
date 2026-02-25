@@ -1,6 +1,5 @@
 {
   "require": {
-    "greenpeace/planet4-child-theme-international" : "v0.*",
-    "greenpeace/planet4-master-theme" : "v1.360.0"
+    "greenpeace/planet4-child-theme-international" : "v0.*"
   }
 }
