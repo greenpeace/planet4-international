@@ -1,5 +1,5 @@
 {
   "require": {
-    "greenpeace/planet4-child-theme-international" : "dev-main"
+    "greenpeace/planet4-child-theme-international" : "dev-PLANET-8138_apply-analytics-metadata-to-actions-list"
   }
 }
