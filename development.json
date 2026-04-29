@@ -2,6 +2,6 @@
   "require": {
     "greenpeace/planet4-child-theme-international": "dev-main",
     "plugins/shorthand-editor": "*",
-    "greenpeace/planet4-master-theme": "dev-PLANET-8139_Post-List-block-data-attribute"
+    "greenpeace/planet4-master-theme": "dev-PLANET-8138_apply-analytics-metadata-to-actions-list"
   }
 }
