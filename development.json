@@ -2,7 +2,6 @@
   "require": {
     "greenpeace/planet4-child-theme-international": "dev-main",
     "plugins/shorthand-editor": "*",
-    "greenpeace/planet4-master-theme": "dev-main",
-    "plugins/gravityformsstripe": "6.0.3"
+    "greenpeace/planet4-master-theme": "dev-main"
   }
 }
