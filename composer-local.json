@@ -13,11 +13,22 @@
           "type": "zip"
         }
       }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "plugins/gravityformsstripe",
+        "version": "6.0.3",
+        "dist": {
+          "url": "https://storage.googleapis.com/planet4-3rdparty-plugins/gravityformsstripe_5.9.2.zip",
+          "type": "zip"
+        }
+      }
     }
   ],
   "require": {
     "greenpeace/planet4-child-theme-international": "dev-main",
-    "plugins/gravityformsstripe": "*",
+    "plugins/gravityformsstripe": "5.9.2",
     "plugins/gravityformssurvey": "*",
     "greenpeace/planet4-gpch-plugin-optimize": "0.*"
   }
