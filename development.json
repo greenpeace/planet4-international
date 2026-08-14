@@ -1,6 +1,7 @@
 {
   "require": {
     "greenpeace/planet4-child-theme-international": "dev-main",
-    "plugins/shorthand-editor": "*"
+    "plugins/shorthand-editor": "*",
+    "greenpeace/planet4-master-theme": "dev-dynamic-listing-pages-cache"
   }
 }
