@@ -2,6 +2,6 @@
   "require": {
     "greenpeace/planet4-child-theme-international": "dev-main",
     "plugins/shorthand-editor": "*",
-    "greenpeace/planet4-master-theme": "dev-PLANET-8252_optimize_blocks_report"
+    "greenpeace/planet4-master-theme": "dev-PLANET-8287_news-stories-dynamic-reloading-cache-api-endpoints"
   }
 }
